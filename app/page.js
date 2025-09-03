@@ -22,7 +22,7 @@ export default function Home() {
             Junior Shop
           </h1>
 
-          {/* Search Bar */}
+          
           <div className="relative w-full sm:w-64 md:w-80 mt-3 sm:mt-0">
             <input
               type="text"
