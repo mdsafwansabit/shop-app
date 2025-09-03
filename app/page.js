@@ -15,14 +15,13 @@ export default function Home() {
 
   return (
     <div className="min-h-screen flex flex-col bg-gray-950 text-gray-100">
-      
+      {/* Header */}
       <header className="w-full bg-gray-900 shadow-md sticky top-0 z-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex flex-col sm:flex-row justify-between items-center gap-3 sm:gap-0">
           <h1 className="text-xl sm:text-2xl md:text-3xl font-bold text-blue-400 text-center sm:text-left">
             Junior Shop
           </h1>
 
-          
           <div className="relative w-full sm:w-64 md:w-80 mt-3 sm:mt-0">
             <input
               type="text"
@@ -36,7 +35,7 @@ export default function Home() {
         </div>
       </header>
 
-      
+      {/* Main Content */}
       <main className="flex-1 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12 w-full">
         <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-6 sm:mb-8 text-gray-100 text-center sm:text-left">
           Our Products
@@ -44,7 +43,7 @@ export default function Home() {
 
         {filteredProducts.length === 0 ? (
           <p className="text-gray-400 text-sm sm:text-base text-center">
-            No products found for "{query}"
+            {`No products found for "${query}"`}
           </p>
         ) : (
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 sm:gap-8">
@@ -75,7 +74,7 @@ export default function Home() {
         )}
       </main>
 
-      
+      {/* Footer */}
       <footer className="bg-gray-950 text-gray-400 text-center py-6 border-t border-gray-800 text-sm sm:text-base">
         <p>&copy; {new Date().getFullYear()} Junior Shop. All rights reserved.</p>
       </footer>
