@@ -64,7 +64,7 @@ export default function Home() {
                   <p className="text-yellow-400 font-bold mt-2 text-base sm:text-lg md:text-xl">
                     {formatPrice(p.price)}
                   </p>
-                  <button className="mt-20px w-full bg-blue-600 text-white py-2 sm:py-2.5 rounded-lg hover:bg-blue-500 transition mt-4 text-sm sm:text-base md:text-lg">
+                  <button className="mt-200px w-full bg-blue-600 text-white py-2 sm:py-2.5 rounded-lg hover:bg-blue-500 transition mt-4 text-sm sm:text-base md:text-lg">
                     Buy Now
                   </button>
                 </div>
